@@ -5,11 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutes } from './app.routing';
 //Modulos
 import { PagesModule } from './pages/pages.module';
+//Servicios
+import { ServiceModule } from './services/service.module';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -19,11 +22,14 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent
 ],
   imports: [
+    ServiceModule,
     BrowserModule,
     PagesModule,
     AppRoutes
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
