@@ -17,6 +17,8 @@ import { ProgressComponent } from './progress/progress.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoComponent } from '../components/grafico/grafico.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations:[
@@ -26,7 +28,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         ProgressComponent,
         IncrementadorComponent,
         GraficoComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
 ],
     exports:[
         PagesComponent,
